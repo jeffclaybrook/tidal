@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tidal Single Page App</title>
+   <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+   <nav>
+      <a href="/" class="logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 22" fill="#fff"><path d="M58.2177 21.1555H54.1108V6.58787H48.7992V3.06799H63.5293V6.58787H58.2177V21.1555Z"></path><path d="M75.819 21.1553H79.9501V3.06799H75.819V21.1553Z"></path><path d="M152.855 17.5861H160V21.1555H148.724V3.06799H152.855V17.5861Z"></path><path d="M97.7115 17.6108H100.273C103.72 17.6108 106.018 15.4605 106.018 12.0382C106.018 8.78718 103.696 6.58813 100.371 6.58813H97.7115V17.6108ZM93.7028 3.06799H100.395C105.333 3.06799 110.247 5.68264 110.247 12.0626C110.247 18.0761 105.431 21.1551 100.64 21.1551L93.7028 21.1553V3.06799Z"></path><path d="M125.334 14.375L128.058 7.30083L130.757 14.375H125.334ZM133.175 21.1555H137.715L130.264 3.06799H125.999L118.475 21.1555H122.894L124.227 17.5865H131.853L133.175 21.1555Z"></path><path d="M21.1775 5.70464L15.8834 10.9992L10.589 5.70464L15.8834 0.411743L21.1775 5.70464Z"></path><path d="M21.1775 16.2936L15.8834 21.5882L10.589 16.2936L15.8834 10.9993L21.1775 16.2936Z"></path><path d="M10.5886 5.70506L5.29417 10.9997L0 5.70506L5.29417 0.411743L10.5886 5.70506Z"></path><path d="M31.7655 5.70506L26.4715 10.9997L21.1769 5.70506L26.4715 0.411743L31.7655 5.70506Z"></path></svg></a>
+      <ul>
+         <li>
+            <a href="/" class="active" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3 13h1v7c0 1.103.897 2 2 2h12c1.103 0 2-.897 2-2v-7h1a1 1 0 0 0 .707-1.707l-9-9a.999.999 0 0 0-1.414 0l-9 9A1 1 0 0 0 3 13zm7 7v-5h4v5h-4zm2-15.586 6 6V15l.001 5H16v-5c0-1.103-.897-2-2-2h-4c-1.103 0-2 .897-2 2v5H6v-9.586l6-6z"></path></svg>
+               <span>Home</span>
+            </a>
+         </li>
+         <li>
+            <a href="/explore" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.9,12.2 C20.9,7.39521356 17.0047864,3.5 12.2,3.5 C7.39521356,3.5 3.5,7.39521356 3.5,12.2 C3.5,17.0047864 7.39521356,20.9 12.2,20.9 C17.0047864,20.9 20.9,17.0047864 20.9,12.2 Z M22.4,12.2 C22.4,17.8332136 17.8332136,22.4 12.2,22.4 C6.56678644,22.4 2,17.8332136 2,12.2 C2,6.56678644 6.56678644,2 12.2,2 C17.8332136,2 22.4,6.56678644 22.4,12.2 Z"></path><path d="M7.82869925,17.5252594 L6.87509492,16.5716551 L9.83036628,9.83134582 L16.5696041,6.87542157 L17.5258411,7.827501 L14.5689784,14.5688784 L7.82869925,17.5252594 Z M13.4304216,13.4303216 L15.3530179,9.04697723 L10.9690337,10.9698542 L9.04734145,15.352802 L13.4304216,13.4303216 Z"></path></svg>
+               <span>Explore</span>
+            </a>
+         </li>
+         <li>
+            <a href="/radio" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M2.25,12A9.73,9.73,0,0,1,6.59,3.89L5.76,2.64a11.25,11.25,0,0,0,0,18.72l.83-1.25A9.73,9.73,0,0,1,2.25,12Z"></path><path d="M18.24,2.64l-.83,1.25a9.75,9.75,0,0,1,0,16.22l.83,1.25a11.25,11.25,0,0,0,0-18.72Z"></path><path d="M9.37,8,8.53,6.8a6.25,6.25,0,0,0,0,10.4L9.37,16a4.75,4.75,0,0,1,0-7.9Z"></path><path d="M15.47,6.8,14.63,8a4.75,4.75,0,0,1,0,7.9l.83,1.25a6.25,6.25,0,0,0,0-10.4Z"></path><circle cx="12" cy="12" r="1.5"></circle></svg>
+               <span>Radio</span>
+            </a>
+         </li>
+         <li>
+            <a href="/playlists" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M6.75,15a3.71,3.71,0,0,0-2.25-.77A3.75,3.75,0,1,0,8.25,18V3H6.75ZM4.5,20.25A2.25,2.25,0,1,1,6.75,18,2.25,2.25,0,0,1,4.5,20.25Z"></path><path d="M12 14.8H21V16.3H12z"></path><path d="M12 6.8H23V8.3H12z"></path><path d="M12 10.8H22V12.3H12z"></path></svg>
+               <span>Playlists</span>
+            </a>
+         </li>
+         <li>
+            <a href="/albums" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20,5.63A10.2,10.2,0,0,0,4,18.37a10.13,10.13,0,0,0,6.84,3.77A10.42,10.42,0,0,0,12,22.2,10.2,10.2,0,0,0,20,5.63ZM20.65,13A8.7,8.7,0,1,1,12,3.3a8.79,8.79,0,0,1,1,.05A8.7,8.7,0,0,1,20.65,13Z"></path><path d="M12,9a3,3,0,1,0,3,3A3,3,0,0,0,12,9Zm0,4.5A1.5,1.5,0,1,1,13.5,12,1.5,1.5,0,0,1,12,13.5Z"></path></svg>
+               <span>Albums</span>
+            </a>
+         </li>
+         <li>
+            <a href="/tracks" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M8.1,4.65V15.91a3.45,3.45,0,1,0,1.5,2.84V5.85L19.8,3.49V14.11A3.45,3.45,0,1,0,21.3,17V1.61Zm-2,16a2,2,0,1,1,2-2A2,2,0,0,1,6.15,20.7Zm11.7-1.8A1.95,1.95,0,1,1,19.8,17,2,2,0,0,1,17.85,18.9Z"></path></svg>
+               <span>Tracks</span>
+            </a>
+         </li>
+         <li>
+            <a href="/videos" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M1.8,3.6V20.4H22.2V3.6ZM20.7,18.9H3.3V5.1H20.7Z"></path><path d="M9.67,7.9v8.2L15.83,12Zm1.5,2.8L13.12,12l-1.95,1.3Z"></path></svg>
+               <span>Videos</span>
+            </a>
+         </li>
+         <li>
+            <a href="/artists" data-link>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20,4.22a5.67,5.67,0,0,0-9.68,4.57l-8,9.79,3.3,3.3,9.79-8c.18,0,.36.05.55.05a5.7,5.7,0,0,0,4-9.73ZM5.74,19.86,4.36,18.48l6.44-7.89a5.48,5.48,0,0,0,2.83,2.84Zm13.21-8.65a4.2,4.2,0,1,1,0-5.94A4.17,4.17,0,0,1,18.95,11.22Z"></path></svg>
+               <span>Artists</span>
+            </a>
+         </li>
+      </ul>
+   </nav>
+   <header>
+      <div class="wrapper">
+         <button class="icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M12.5 3.5L6 10L12.5 16.5" stroke="#FCFCFC" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+         </button>
+         <button class="icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M7.5 16.5L14 10L7.5 3.5" stroke="#FCFCFC" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+         </button>
+      </div>
+      <div class="wrapper">
+         <div class="search-bar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 20 20" fill=""><path fill-rule="evenodd" clip-rule="evenodd" d="M4 9.5C4 6.46243 6.46243 4 9.5 4C12.5376 4 15 6.46243 15 9.5C15 12.5376 12.5376 15 9.5 15C6.46243 15 4 12.5376 4 9.5ZM9.5 2C5.35786 2 2 5.35786 2 9.5C2 13.6421 5.35786 17 9.5 17C11.2104 17 12.7872 16.4274 14.0489 15.4635L16.7925 18.2071C17.183 18.5976 17.8162 18.5976 18.2067 18.2071C18.5972 17.8166 18.5972 17.1834 18.2067 16.7929L15.4632 14.0493C16.4273 12.7875 17 11.2106 17 9.5C17 5.35786 13.6421 2 9.5 2Z" fill="#FCFCFC"></path></svg>
+            <input type="text" placeholder="Search">
+         </div>
+         <button class="icon-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="#fcfcfc"><circle cx="19" cy="5" r="3"></circle><path d="M14.0486 4.30036C14.0166 4.52898 14 4.76256 14 5C14 5.487 14.0696 5.95774 14.1995 6.40281C13.5477 6.13012 12.8087 5.9745 12.0109 5.9745H11.9782C9.09983 5.9745 6.9745 8.00459 6.9745 10.2608V16H17.0146V10.2608C17.0146 10.0241 16.9911 9.78977 16.9458 9.55989C17.5604 9.83719 18.2411 9.99389 18.9577 9.99983C18.9616 10.0863 18.9636 10.1733 18.9636 10.2608V16H20C20.5523 16 21 16.4477 21 17C21 17.5523 20.5523 18 20 18H15.9954C15.8967 20.1628 14.2065 22 12 22C9.79519 22 8.10282 20.1743 8.00452 18H4C3.44772 18 3 17.5523 3 17C3 16.4477 3.44772 16 4 16H5.0255V10.2608C5.0255 7.01654 7.71577 4.50874 11 4.08785V3C11 2.44772 11.4477 2 12 2C12.5523 2 13 2.44772 13 3V4.08912C13.3577 4.13541 13.7081 4.20641 14.0486 4.30036ZM10.0079 18H13.992C13.8982 19.1679 12.9902 20 12 20C11.0075 20 10.101 19.1749 10.0079 18Z" clip-rule="evenodd"></path></svg>
+         </button>
+      </div>
+   </header>
+   <main id="app"></main>
+   <script type="module" src="/static/js/script.js"></script>
+</body>
+</html>
